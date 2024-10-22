@@ -99,7 +99,7 @@ pub fn build(b: *std.Build) !void {
         .flags = flags,
     });
 
-    lib.installHeader(upstream.path("libdeflate.h"), "");
+    lib.installHeader(upstream.path("libdeflate.h"), "libdeflate.h");
 
     b.installArtifact(lib);
 }
